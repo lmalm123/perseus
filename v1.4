@@ -1,0 +1,171 @@
+#include <iostream>
+#include <chrono>
+#include <thread>
+using namespace std; 
+
+
+void chapter_1() {
+cout << "chapter 1" << endl;
+cout << "Once upon a time, there was a hero named perseus" << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "He faced great hardship agaisnt overwhelming odds and challenges, but he still triumphed above all odds(and his grandfather but we'll dive deeper into that later)" << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "Perseus was the child of Zeus and Danae, a grandson of Acrisius" << endl; 
+this_thread::sleep_for(chrono::seconds(1));
+cout << "Acrisius went to the oracle of Pythian, intending to find out if he would ever have a son, for he did not have one" << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "'Great things shall he acheive, says the oracle.'however, he will also grow up and overthrow you'" << endl; 
+} 
+
+void chapter_2() {
+cout << "chapter 2" << endl;
+cout << "Acrisius, being the δειλός he was, decided to shut his daughter up in a subterraneous apartment, made of brass and stone." << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "Zeus, being a god(who has unimaginable powers and can basically laugh at Acrisius's plans), decided to visit Danae and gave birth to perseus so as to fulfill the prophecy" << endl; 
+this_thread::sleep_for(chrono::seconds(1));
+cout << "When Acrisius found out, he asked for a box and immediately locked up both mother and son, with the intentions of letting the ocean do the dirty work for him" << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "Zeus, being god, found that out and convinced the ocean(which by that time was ruled by Poseiden, yk, Zeus's brother. like i said. Acrisius was a fool ) to spare them and get washed up on the shores of Seriphos instead. Where Dictys, a fisherman(that happened to be brothers with the king of Seriphos), found them." << endl;
+this_thread::sleep_for(chrono::seconds(1));
+cout << "King Polydectes found danae and had fixed his eyes on Danaë in the way powerful men fix their eyes on things they intend to possess, her feelings on the matter being of no particular concern to him" << endl;
+}
+void chapter_2_question() {
+    string ans;
+    cout << "Did the King of Seriphos enslave Perseus's mother? yes/no" << endl;
+    cin >> ans;
+
+    if (ans == "yes") {
+        cout << "Congrats, you aren't as foolish as Acrisus" << endl; 
+        this_thread::sleep_for(chrono::seconds(1));
+        cout << "Polydectes, king of Seriphos, made Danae his slave, and courted her favour" << endl; 
+    } else if (ans == "no") { 
+         cout << "δειλός. The answer was yes." << endl;
+         chapter_2_question();
+    } else {
+         cout << "that wasnt in the choice idiot" << endl;
+         chapter_2_question();     
+    }   
+} 
+void chapter_3() {
+    cout << "chapter 3" << endl; 	
+    this_thread::sleep_for(chrono::seconds(1));
+    cout << "Polydectes, while he was trying to court Danae's feelings, still had Perseus to worry about." << endl;
+    this_thread::sleep_for(chrono::seconds(1));
+    cout << "Hence he came up with a plan." << endl;
+    this_thread::sleep_for(chrono::seconds(1));	
+    cout << "He asked Perseus to slay  Medusa, a feat that no other heroes have done before Perseus, and king polydectes will give the head to Hippodameiq as a wedding present." << endl; 
+    this_thread::sleep_for(chrono::seconds(1));
+    cout << "The gods heard about it and decided to 'chip in' weapons and gears for Perseus's quest(aka sponsor Perseus weapons and now i think ive offendeed the gods, i can feel the cease and desist letter from hermes cos i exposed them...)" << endl; 
+    this_thread::sleep_for(chrono::seconds(1));
+    cout << "Athena gave Perseus a sheild, Hermes gave him a pair of flying shoes and Hades lent Perseus his helm of darkness" << endl; 
+    
+
+}
+void chapter_3_question() {
+     string ans;
+     cout << "did Perseus slain medusa (yes/no)" << endl;
+     cin >> ans;
+     
+    if (ans == "yes") {
+        cout << "congratulations! thats the correct ans" << endl;
+    } else if (ans == "no") {
+        cout << "the ans was yes. asshole. did you really want perseus to die?" << endl;
+        chapter_3_question();
+    } else {
+        cout << "invalid input, pls try again" << endl;
+        chapter_3_question(); 
+    }
+}
+void chapter_4() {
+     cout << "Perseus, having recieved the god's gifts, easily bested medusa." << endl;
+     this_thread::sleep_for(chrono::seconds(1));
+     cout << "after he bested the monster, he went back to seriphons. on his way back, he met andromeda and decided to marry her." << endl; 
+     this_thread::sleep_for(chrono::seconds(1));
+     cout << "when he returned, they celebrated and when perseus was returning he hosted a party in a city he had liberated from the gargoyles. there he met his grandfather that had purged in into the sea. however, he had no temptation for revenge" << endl;
+     this_thread::sleep_for(chrono::seconds(1)); 
+     cout << "during the game, it became quite windy. But perseus threw the disk anyways and the wind carried the disk to Acrisius. killing him instantly" << endl;
+
+}
+void chapter_4_question() {
+     string ans; 
+     cout << "what did Perseus use to kill Acrisius (disc/plate)" << endl;
+     cin >> ans;
+     if (ans == "disc") {
+        cout << "Congratulations! that is correct. you are now entering a secret level!" << endl;
+     } else if (ans == "plate") {
+        cout << "IT WAS A DISC, IDOT" << endl; 
+        chapter_4_question();
+     } else {
+        cout << "invalid input, all of your previous inputs have been sent to the developer. have a nice day" << endl; 
+        chapter_4_question();
+     }
+} 
+
+void secret_level() {
+     cout << "Congratulations!!! you've found the secret level!" << endl;
+     this_thread::sleep_for(chrono::seconds(1));
+     cout << "This is a secret level that lets you spam however much medusa's you want. it's purely to use up your ram. make sure you have at least 8gb of ram" << endl;
+     this_thread::sleep_for(chrono::seconds(1));
+     cout << "if you dont have at least 8gb of ram but still want to do it anyways, then proceed with caution. developer is not responsible for your machine" << endl;
+     
+     int number_of_people;
+     cout << "how many medusas do you wish to spawn" << endl;
+     cin >> number_of_people;
+
+     string* names = new string [number_of_people];
+     
+     cout << "congrates! you've spawned " << number_of_people << " medusas, they do nothing" << endl; 
+     delete[] names; 
+}
+
+struct Character {
+     string name;
+     int hp;
+     int fist;
+     int dmg;
+     int death_stare; 
+     int shield; 
+     string shield_name;
+     string func; 
+};
+
+
+
+
+int main() {
+    chapter_1();
+    chapter_2();
+    chapter_2_question();
+    chapter_3();
+    chapter_3_question();
+    chapter_4();
+    chapter_4_question();
+    secret_level();
+    
+
+    Character medusa; 
+    medusa.name = "Medusa, the monster";
+    medusa.hp = 120; 
+    medusa.death_stare = 100; 
+
+    Character perseus;
+    perseus.name = "Perseus the hero";
+    perseus.hp = 100;
+    perseus.func = "fist";
+    perseus.fist = 30; 
+    perseus.shield_name = "sheild of athena";
+    perseus.shield = 70;
+    
+    
+    cout << medusa.name << "HP: " << medusa.hp << "\n"; 
+    cout << perseus.name << "HP: " << perseus.hp << "\n"; 
+    cout << "medusa's death_stare" << "HP: " << medusa.death_stare << "\n"; 
+    cout << perseus.func << "HP: " << perseus.fist << "\n";
+    cout << perseus.shield_name << "HP: " << perseus.shield << "\n";
+
+
+
+
+
+    return 0;
+}
